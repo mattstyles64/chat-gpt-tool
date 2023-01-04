@@ -1,0 +1,14 @@
+{
+  "name": "chat-gpt-tool",
+  "version": "1.0.2",
+  "description": "CLI tool for integrating with chat GPT",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "m.styles",
+  "license": "ISC",
+  "bin": {
+    "chat-gpt": "./bin/index.js"
+  }
+}
