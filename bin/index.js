@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-require('dotenv').config();
+require('dotenv').config({path: "./vars/.env"});
 const OpenAI = require('openai');
 const { Configuration, OpenAIApi } = OpenAI;
 const configuration = new Configuration({
