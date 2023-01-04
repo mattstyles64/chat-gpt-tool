@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
-require('dotenv').config({path: "../vars/.env"});
+const path = require('path')
+require('dotenv').config({path: path.resolve(__dirname, '../vars/.env')});
 const OpenAI = require('openai');
 const { Configuration, OpenAIApi } = OpenAI;
 const configuration = new Configuration({
-    organization: "org-SA8UCjBrbhtyUaMZaCmWJXIU",
+    organization: process.env.ORG,
     apiKey: process.env.API_KEY,
 });
 const openai = new OpenAIApi(configuration);
