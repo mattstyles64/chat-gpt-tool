@@ -2,6 +2,8 @@
 
 const path = require('path');
 require('dotenv').config({ path: path.join(__dirname, '../vars/.env') });
+console.log(process.env.ORG);
+console.log(process.env.API_KEY);
 const OpenAI = require('openai');
 const { Configuration, OpenAIApi } = OpenAI;
 const configuration = new Configuration({
@@ -10,7 +12,7 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-async function start() {
+/* async function start() {
     const response = await openai.createCompletion({
         model: "text-davinci-003",
         prompt: "Say this is a test",
@@ -23,4 +25,4 @@ async function start() {
     }
 }
 
-start();
+start(); */
