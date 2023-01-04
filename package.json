@@ -1,6 +1,6 @@
 {
   "name": "chat-gpt-tool",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "CLI tool for integrating with chat GPT",
   "main": "bin/index.js",
   "scripts": {
