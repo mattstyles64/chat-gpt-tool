@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '../vars/.env') });
+require('dotenv').config({ path: path.join(__dirname, '../vars/.env.local'), override: true });
 console.log(process.env.ORG);
 console.log(process.env.API_KEY);
 const OpenAI = require('openai');
